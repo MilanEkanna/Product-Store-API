@@ -1,4 +1,5 @@
-// src/components/Navbar.js
+// This is our navbar component that conditionally renders links based on user authentication status and the page context (landing or internal).
+
 import { Link, useNavigate } from 'react-router-dom';
 import { getCurrentUser, logout } from '../utils/auth';
 import { useEffect, useState } from 'react';
@@ -7,7 +8,7 @@ export default function Navbar({ isLanding = false }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
 
-  // Check login status on mount & when location changes
+
   useEffect(() => {
     setIsLoggedIn(!!getCurrentUser());
   }, []);
