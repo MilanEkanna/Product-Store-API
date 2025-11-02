@@ -13,7 +13,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/signup" element={<SignupPage />} />
-      <Route path="https://products-store-api.vercel.app/login" element={<LoginPage />} />
+      <Route path="/login" element={<LoginPage />} />
       <Route path="/about" element={<About/>} />
       <Route
         path="/products"
