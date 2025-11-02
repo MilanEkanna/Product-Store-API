@@ -10,7 +10,7 @@ export default function Navbar({ isLanding = false }) {
 
 
   useEffect(() => {
-    setIsLoggedIn(!!getCurrentUser());
+    setIsLoggedIn(!!getCurrentUser()); //!! converts result to boolean
   }, []);
 
   const handleLogout = () => {
@@ -43,7 +43,7 @@ export default function Navbar({ isLanding = false }) {
               <button
                 onClick={handleLogout}
                 className={`px-3 py-2 text-sm font-medium rounded-md transition ${
-                  isLanding
+                  isLanding //Chnage styles based on isLanding prop
                     ? 'text-white hover:text-pink-200'
                     : 'text-white  bg-red-600'
                 }`}

@@ -4,7 +4,7 @@ import LandingPage from './pages/LandingPage';
 import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage';
 import ProductListPage from './pages/ProductListPage';
-import ProductDetailPage from './pages/ProductDetailPage'; // ← new import
+import ProductDetailPage from './pages/ProductDetailPage'; 
 import ProtectedRoute from './routes/ProtectedRoute';
 import About from './pages/About';
 
@@ -18,7 +18,7 @@ export default function App() {
       <Route
         path="/products"
         element={
-          <ProtectedRoute>
+          <ProtectedRoute> // wrapping the protected component to ensure that only authenticated uses can access
             <ProductListPage />
           </ProtectedRoute>
         }
