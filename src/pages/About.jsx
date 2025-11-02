@@ -19,7 +19,7 @@ export default function About() {
                     {/* Hero Section */}
                     <div className="text-center mb-16">
                         <h1 className="text-3xl sm:text-4xl font-bold">
-                            About <span className="text-blue-400">Product Store</span>
+                            About Page <span className="text-blue-400">Product Store</span>
                         </h1>
                         <p className="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
                             A high-performance React dashboard for managing products from the Product Store API.
