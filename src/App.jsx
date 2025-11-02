@@ -18,7 +18,8 @@ export default function App() {
       <Route
         path="/products"
         element={
-          <ProtectedRoute> // wrapping the protected component to ensure that only authenticated uses can access
+          // wrapping the protected component to ensure that only authenticated uses can access
+          <ProtectedRoute> 
             <ProductListPage />
           </ProtectedRoute>
         }
