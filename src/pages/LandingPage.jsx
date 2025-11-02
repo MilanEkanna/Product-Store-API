@@ -1,4 +1,5 @@
 // This is our landing page public facing homepage
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
 export default function LandingPage() {
@@ -33,18 +34,18 @@ export default function LandingPage() {
                         Browse our curated collection of high-quality items. Sign up or log in to get started!
                     </p>
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                        <a
-                            href="/login"
-                            className="inline-block px-5 py-2.5 sm:px-6 sm:py-3 bg-white/10 backdrop-blur-sm text-white font-medium rounded-md hover:bg-white/20 transition"
-                        >
-                            Log In
-                        </a>
-                        <a
-                            href="/signup"
-                            className="inline-block px-5 py-2.5 sm:px-6 sm:py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition shadow-lg"
-                        >
-                            Create Account
-                        </a>
+                        <Link
+  to="/login"
+  className="inline-block px-5 py-2.5 sm:px-6 sm:py-3 bg-white/10 backdrop-blur-sm text-white font-medium rounded-md hover:bg-white/20 transition"
+>
+  Log In
+</Link>
+<Link
+  to="/signup"
+  className="inline-block px-5 py-2.5 sm:px-6 sm:py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition shadow-lg"
+>
+  Create Account
+</Link>
                     </div>
                 </main>
 
