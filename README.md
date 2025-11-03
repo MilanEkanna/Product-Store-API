@@ -79,7 +79,7 @@ src/
 
 ##  Live Demo
 
-🔗 **[View Live on Vercel] (https://your-username.github.io/your-repo-name/)**  
+🔗 **[View Live on Vercel] (https://product-store-ivory.vercel.app/)**  
 
 
 > **Login Credentials**  
