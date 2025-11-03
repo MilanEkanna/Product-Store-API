@@ -95,10 +95,10 @@ src/
    git clone https://github.com/MilanEkanna/Product-Store-API.git
    cd your-repo-name
 
-2. **Install dependencies**
-  ```bash
+   Install dependencies
+
    npm install
 
-3. **Starting server**
-  ```bash
+   Starting server
+
    npm run dev
